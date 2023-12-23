@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Mobile_App</string>
     <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_water_tracking">WaterTracking</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_nutrition_tracking">NutritionTracking</string>
+    <string name="title_activity_profile_activtiy">ProfileActivtiy</string>
 </resources>
