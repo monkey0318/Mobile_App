@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@tools:sample/avatars"
-                app:srcCompat="@drawable/top_background1" />
+                app:srcCompat="@drawable/top_background2" />
 
             <TextView
                 android:id="@+id/textView"
@@ -31,13 +31,29 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="Welcome\nBack"
-                android:textColor="@android:color/holo_orange_dark"
+                android:text="Create\nAccount"
+                android:textColor="#3b608c"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editNameText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHint="#756c6c" />
+
+            <EditText
+                android:id="@+id/editEmailText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -76,59 +92,18 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
                 android:src="@tools:sample/avatars"
-                app:srcCompat="@drawable/btn_arraw1" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginEnd="32dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="16dp">
-
-                <Button
-                    android:id="@+id/facebook_button"
-                    style="@android:style/Widget.Button.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_background"
-                    android:drawableEnd="@drawable/facebook"
-                    android:drawablePadding="16dp"
-                    android:padding="8dp"
-                    android:text="Facebook"
-                    android:textColor="#3b608c"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/gmail_button"
-                    style="@android:style/Widget.Button.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_background"
-                    android:drawableEnd="@drawable/google"
-                    android:drawablePadding="16dp"
-                    android:padding="8dp"
-                    android:text="Google"
-                    android:textColor="#3b608c"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    tools:layout_marginStart="16dp" />
-
-            </LinearLayout>
+                app:srcCompat="@drawable/btn_arrow2" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Are you a new user? Register"
-                android:textStyle="bold"
-                android:textSize="16sp"
+                android:text="Forget your password? Recover it"
+                android:textAlignment="center"
                 android:textColor="#3b608c"
-                android:textAlignment="center"/>
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
