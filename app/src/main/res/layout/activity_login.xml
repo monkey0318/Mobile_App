@@ -21,8 +21,8 @@
             <ImageView
                 android:id="@+id/login_image"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@tools:sample/avatars"
+                android:layout_height="302dp"
+
                 app:srcCompat="@drawable/top_background1" />
 
             <TextView
@@ -75,7 +75,7 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                android:src="@tools:sample/avatars"
+
                 app:srcCompat="@drawable/btn_arraw1" />
 
             <LinearLayout
@@ -120,7 +120,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/registerTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
