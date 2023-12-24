@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Register">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,8 +21,8 @@
             <ImageView
                 android:id="@+id/login_image"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@tools:sample/avatars"
+                android:layout_height="319dp"
+
                 app:srcCompat="@drawable/top_background2" />
 
             <TextView
@@ -91,11 +91,11 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                android:src="@tools:sample/avatars"
+
                 app:srcCompat="@drawable/btn_arrow2" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/registerTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
