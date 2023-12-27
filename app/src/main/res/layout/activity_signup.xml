@@ -21,7 +21,7 @@
             <ImageView
                 android:id="@+id/login_image"
                 android:layout_width="match_parent"
-                android:layout_height="319dp"
+                android:layout_height="302dp"
 
                 app:srcCompat="@drawable/top_background2" />
 
@@ -50,6 +50,7 @@
                 android:hint="Name"
                 android:inputType="text"
                 android:padding="8dp"
+                android:textColor="@color/black"
                 android:textColorHint="#756c6c" />
 
             <EditText
@@ -64,8 +65,9 @@
                 android:drawablePadding="16dp"
                 android:ems="10"
                 android:hint="Email"
-                android:inputType="text"
+                android:inputType="text|textEmailAddress"
                 android:padding="8dp"
+                android:textColor="@color/black"
                 android:textColorHint="#756c6c" />
 
             <EditText
@@ -79,31 +81,28 @@
                 android:drawableStart="@drawable/password"
                 android:drawablePadding="16dp"
                 android:ems="10"
-                android:hint="Passoword"
-                android:inputType="text|textPassword"
+                android:hint="Password"
+                android:inputType="textPassword"
                 android:padding="8dp"
+                android:textColor="@color/black"
                 android:textColorHint="#756c6c" />
 
             <ImageView
-                android:id="@+id/login_arrow"
+                android:id="@+id/register_arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-
                 app:srcCompat="@drawable/btn_arrow2" />
 
             <TextView
-                android:id="@+id/registerTextView"
+                android:id="@+id/loginTextView"
+                style="@style/small_login_register_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Forget your password? Recover it"
-                android:textAlignment="center"
-                android:textColor="#3b608c"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text="Already have an account? Login" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

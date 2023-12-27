@@ -1,7 +1,12 @@
 package com.example.mobile_app
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Register : AppCompatActivity() {
@@ -9,6 +14,7 @@ class Register : AppCompatActivity() {
     lateinit var editNameText:EditText
     lateinit var editEmailText: EditText
     lateinit var editPasswordText: EditText
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,14 +28,41 @@ class Register : AppCompatActivity() {
         val name = editNameText.text.toString()
         val email = editEmailText.text.toString()
         val password = editPasswordText.text.toString()
+        val registerBtn: ImageView = findViewById(R.id.register_arrow)
+        val loginTextView:TextView= findViewById(R.id.loginTextView)
 
-        //store data
+        registerBtn.setOnClickListener { checkEmpty(it) }
+        loginTextView.setOnClickListener { loginAccount(it) }
 
-        //val user=User(name,email,password)
-         //val database = FirebaseDatabase.getInstance()
-        //val usersRef = database.getReference("users")
-        //val userId = usersRef.push().key
-        //usersRef.child(userId!!).setValue(user)
+    }
+
+    private fun checkEmpty(view:View){
+        val name = editNameText.text.toString()
+        val email = editEmailText.text.toString()
+        val password = editPasswordText.text.toString()
+
+        if (name.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()) {
+            //store data
+
+            //val user= User(name,email,password)
+            //  val database = FirebaseDatabase.getInstance()
+            // val usersRef = database.getReference("users")
+            // val userId = usersRef.push().key
+            // usersRef.child(userId!!).setValue(user)
+
+            loginAccount(view)
+
+        }else {
+
+            Toast.makeText(this, "Do not leave empty", Toast.LENGTH_SHORT).show()
+        }
+
+    }
+
+    private fun loginAccount(view: View) {
+        val context = view.context
+        val intent = Intent(context, MainActivity::class.java)
+        context.startActivity(intent)
     }
 
 }
