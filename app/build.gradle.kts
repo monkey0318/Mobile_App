@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.mobile_app"
-        minSdk = 26
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -39,6 +39,7 @@ android {
     buildFeatures {
         compose = true
         viewBinding = true
+        dataBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.0"

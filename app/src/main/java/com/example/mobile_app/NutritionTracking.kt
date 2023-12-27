@@ -8,10 +8,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.mobile_app.databinding.ActivityNutritionTrackingBinding
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.view.View
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 class NutritionTracking : AppCompatActivity() {
 
     private lateinit var binding: ActivityNutritionTrackingBinding
@@ -35,9 +35,9 @@ class NutritionTracking : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         binding = ActivityNutritionTrackingBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setContentView(R.layout.activity_nutrition_tracking)
 
         val navView: BottomNavigationView = binding.navView
 

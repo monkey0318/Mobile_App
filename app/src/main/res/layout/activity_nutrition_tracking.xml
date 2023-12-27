@@ -29,9 +29,10 @@
         android:id="@+id/protein_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="42dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="75dp" />
 
     <EditText
         android:id="@+id/proteinInput"
@@ -40,8 +41,10 @@
         android:ems="10"
         android:inputType="text"
         android:text="Name"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="34dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/protein_TV"
+        tools:layout_editor_absoluteY="56dp" />
 
     <EditText
         android:id="@+id/carbInput"
@@ -130,8 +133,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="177dp" />
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
